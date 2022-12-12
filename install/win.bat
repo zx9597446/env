@@ -10,3 +10,4 @@ scoop install sysinternals
 scoop install fzf
 scoop install ag
 scoop install croc
+scoop install jq
