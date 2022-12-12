@@ -6,3 +6,4 @@ scoop install windows-terminal
 scoop install clink
 scoop install clink-completions
 scoop install vscode
+scoop install sysinternals
