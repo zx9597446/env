@@ -1,3 +1,5 @@
 sci=scoop install $*
 gst=git status
+gl=git pull
+gp=git push
 cht=curl cheat.sh/$*
