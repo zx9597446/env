@@ -1,5 +1,6 @@
 scoop install clink
 scoop install clink-completions
+scoop install curl
 scoop install googlechrome
 scoop install firefox
 scoop install everything
