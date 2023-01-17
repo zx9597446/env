@@ -11,5 +11,6 @@ scoop install fzf
 scoop install ag
 scoop install croc
 scoop install jq
+scoop install mremoteng
 
 clink set clink.autostart doskey /macrofile=%userprofile%\doskey.macros
