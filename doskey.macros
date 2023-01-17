@@ -1,0 +1,2 @@
+sci=scoop install $*
+gst=git status
