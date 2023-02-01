@@ -1,2 +1,2 @@
 M-/:      clink-select-complete        
-clink set fzf.default_bindings true
+set fzf.default_bindings true
