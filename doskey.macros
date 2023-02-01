@@ -1,5 +1,7 @@
 sci=scoop install $*
+cht=curl cheat.sh/$*
 gst=git status
 gl=git pull
 gp=git push
-cht=curl cheat.sh/$*
+as=adb shell $*
+hsf=fzf < %localappdata%\clink\clink_history
