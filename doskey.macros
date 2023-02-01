@@ -4,4 +4,4 @@ gst=git status
 gl=git pull
 gp=git push
 as=adb shell $*
-hsf=fzf < %localappdata%\clink\clink_history
+hsf=fzf < %localappdata%\clink\clink_history | clip
