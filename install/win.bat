@@ -17,3 +17,4 @@ scoop install snipaste
 scoop install 7zip
 
 clink set clink.autostart doskey /macrofile=%userprofile%\doskey.macros
+curl -o %localappdata%\clink\fzf.lua https://github.com/chrisant996/clink-fzf/blob/main/fzf.lua
