@@ -7,3 +7,4 @@ as=adb shell $*
 hsf=fzf < %localappdata%\clink\clink_history | clip
 fcmd=for /f %i in ('$*') do  %i
 tsf=for /f %i in ('curl -T $1 https://transfer.sh/$1') do qr -s %i
+csq=csvsql --query $1 $2
