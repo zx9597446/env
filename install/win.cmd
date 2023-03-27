@@ -3,4 +3,4 @@ scoop install clink clink-completions curl googlechrome firefox everything power
 clink set clink.autostart doskey /macrofile=%userprofile%\doskey.macros
 curl -o %localappdata%\clink\fzf.lua https://raw.githubusercontent.com/chrisant996/clink-fzf/main/fzf.lua
 clink set fzf.default_bindings true
-clink set cmd.auto_answer on
+clink set cmd.auto_answer answer_yes
