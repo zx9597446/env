@@ -1,3 +1,8 @@
+# apt install -y certbot && certbot certonly --standalone
+# crontab -e
+# 0 0 1 * * /usr/bin/certbot renew --force-renewal
+# 5 0 1 * * /usr/bin/docker restart gost
+
 DOMAIN="YOU.DOMAIN.NAME"
 USER="username"
 PASS="password"
@@ -11,4 +16,4 @@ KEY=${CERT_DIR}/live/${DOMAIN}/privkey.pem
 sudo docker run -d --name gost \
     -v ${CERT_DIR}:${CERT_DIR}:ro \
     --net=host ginuerzh/gost \
-    -L "http2://${BIND_IP}:${PORT}?auth=${AUTH}&cert=${CERT}&key=${KEY}&probe_resist=code:404&knock=www.google.com"
+    -L "http2://${BIND_IP}:${PORT}?auth=${AUTH}&cert=${CERT}&key=${KEY}&probe_resist=code:404&knock=bing.com"
