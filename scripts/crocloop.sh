@@ -1,7 +1,7 @@
 #!/bin/bash
 while :
 do
-  croc --yes --overwrite $1
+  croc --relay test --yes --overwrite --out code
   
   sleep 60
 done
