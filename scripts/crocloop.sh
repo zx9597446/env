@@ -1,7 +1,6 @@
 #!/bin/bash
 while :
 do
-  croc --relay test --yes --overwrite --out code
-  
+  croc --relay RELAY --pass PASS --yes --overwrite --out OUTDIR CODE && echo done
   sleep 60
 done
