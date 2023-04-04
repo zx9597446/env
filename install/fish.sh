@@ -1,7 +1,3 @@
-# install nami in bash
-curl https://bash.ooo/nami.sh | bash
-nami install jinbe joker zoro brook
-
 # install fish
 sudo apt-add-repository -y ppa:fish-shell/release-3 && sudo apt update && sudo apt -y install fish
 echo $(which fish) | sudo tee -a /etc/shells
