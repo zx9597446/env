@@ -1,0 +1,1 @@
+cat ~/.ssh/id_rsa.pub | ssh %1 "mkdir ~/.ssh; cat >> ~/.ssh/authorized_keys"
