@@ -4,4 +4,5 @@ echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb
 sudo apt update
 sudo apt-get install -y mongodb-org
 sudo systemctl enable mongod
+sudo systemctl start mongod
 sudo systemctl status mongod
