@@ -8,3 +8,7 @@ safe-rm -rf .fzf && git clone --depth 1 https://github.com/junegunn/fzf.git ~/.f
 
 wget https://github.com/joehillen/sysz/releases/latest/download/sysz && chmod +x sysz
 sudo mv sysz /usr/local/bin/
+
+wget https://github.com/zx9597446/qtunnel/releases/download/v0.0.1/qtunnel-linux-amd64
+chmod +x qtunnel-linux-amd64
+sudo mv qtunnel-linux-amd64 /usr/local/bin/qtunnel
