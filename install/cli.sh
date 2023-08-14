@@ -1,5 +1,5 @@
 sudo apt update && sudo apt upgrade
-sudo apt install --yes git curl telnet moreutils safe-rm fail2ban unattended-upgrades
+sudo apt install --yes git curl telnet moreutils safe-rm fail2ban unattended-upgrades sshguard
 
 cat <<EOF > "/etc/apt/apt.conf.d/20auto-upgrades"
 APT::Periodic::Update-Package-Lists "1";
@@ -9,19 +9,6 @@ EOF
 sudo systemctl enable unattended-upgrades
 sudo systemctl restart unattended-upgrades
 sudo systemctl status unattended-upgrades
-
-sudo touch /etc/fail2ban/jail.local
-cat <<EOF > "/etc/fail2ban/jail.local"
-[sshd]
-enabled = true
-logpath = /var/log/auth.log
-maxretry = 5
-findtime  = 60m
-bantime   = 60m
-EOF
-sudo systemctl enable fail2ban
-sudo systemctl restart fail2ban
-sudo systemctl status fail2ban
 
 sudo apt install --yes nodejs npm && npm install pm2 -g && pm2 startup
 sudo apt install --yes jq ripgrep silversearcher-ag bat fd-find exa duf
