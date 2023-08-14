@@ -1,4 +1,4 @@
-scoop install clink clink-completions curl googlechrome firefox everything powertoys windows-terminal fzf ag croc mremoteng jq snipaste 7zip cpu-z gpu-z git-credential-manager
+scoop install clink clink-completions
 
 clink set clink.autostart doskey /macrofile=%userprofile%\doskey.macros
 curl -o %localappdata%\clink\fzf.lua https://raw.githubusercontent.com/chrisant996/clink-fzf/main/fzf.lua
