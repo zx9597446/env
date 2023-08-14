@@ -8,9 +8,11 @@ APT::Periodic::AutocleanInterval "7";
 EOF
 sudo systemctl enable unattended-upgrades
 sudo systemctl restart unattended-upgrades
+sudo systemctl status unattended-upgrades
 
 sudo touch /etc/fail2ban/jail.local
 cat <<EOF > "/etc/fail2ban/jail.local"
+[sshd]
 enabled = true
 logpath = %(sshd_log)s
 backend = %(sshd_backend)s
@@ -19,8 +21,8 @@ findtime  = 60m
 bantime   = 60m
 EOF
 sudo systemctl enable fail2ban
-sudo systemctl restart fail2ban.service
-
+sudo systemctl restart fail2ban
+sudo systemctl status fail2ban
 
 sudo apt install --yes nodejs npm && npm install pm2 -g && pm2 startup
 sudo apt install --yes jq ripgrep silversearcher-ag bat fd-find exa duf
