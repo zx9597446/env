@@ -13,6 +13,9 @@ sudo systemctl status unattended-upgrades
 sudo apt install --yes nodejs npm && npm install pm2 -g && pm2 startup
 sudo apt install --yes jq ripgrep silversearcher-ag bat fd-find exa duf
 
+sudo mv /usr/bin/batcat /usr/bin/bat
+sudo mv /usr/bin/fd-find /usr/bin/fd
+
 curl https://getcroc.schollz.com | bash
 safe-rm -rf .fzf && git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install --all
 
