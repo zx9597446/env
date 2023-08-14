@@ -12,9 +12,8 @@ sudo systemctl restart unattended-upgrades
 sudo touch /etc/fail2ban/jail.local
 cat <<EOF > "/etc/fail2ban/jail.local"
 enabled = true
-port    = ssh
-filter  = sshd
-logpath  = /var/log/auth.log
+logpath = %(sshd_log)s
+backend = %(sshd_backend)s
 maxretry = 5
 findtime  = 60m
 bantime   = 60m
