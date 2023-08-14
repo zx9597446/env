@@ -1,4 +1,4 @@
-sudo apt update && sudo apt upgrade --yes 
+sudo apt update
 sudo apt install --yes git curl telnet screen moreutils safe-rm fail2ban unattended-upgrades sshguard
 
 cat <<EOF > "/etc/apt/apt.conf.d/20auto-upgrades"
