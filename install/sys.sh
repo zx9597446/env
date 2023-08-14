@@ -1,5 +1,5 @@
 sudo apt update
-sudo apt install --yes git curl telnet screen moreutils safe-rm fail2ban unattended-upgrades sshguard
+sudo apt install --yes git vim curl telnet screen moreutils safe-rm fail2ban unattended-upgrades sshguard
 
 cat <<EOF > "/etc/apt/apt.conf.d/20auto-upgrades"
 APT::Periodic::Update-Package-Lists "1";
