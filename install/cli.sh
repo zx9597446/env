@@ -14,8 +14,7 @@ sudo touch /etc/fail2ban/jail.local
 cat <<EOF > "/etc/fail2ban/jail.local"
 [sshd]
 enabled = true
-logpath = %(sshd_log)s
-backend = %(sshd_backend)s
+logpath = /var/log/auth.log
 maxretry = 5
 findtime  = 60m
 bantime   = 60m
