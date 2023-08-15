@@ -9,6 +9,7 @@ EOF
 sudo systemctl enable unattended-upgrades
 sudo systemctl restart unattended-upgrades
 sudo systemctl status unattended-upgrades
+sudo systemctl status sshguard
 
 sudo apt install --yes nodejs pnpm && pnpm install pm2 -g && pm2 startup
 sudo apt install --yes docker docker-compose
