@@ -15,11 +15,12 @@ sudo apt install --yes docker docker-compose
 
 sudo apt install --yes jq ripgrep silversearcher-ag bat fd-find exa duf
 
-sudo mv /usr/bin/batcat /usr/bin/bat
-sudo mv /usr/bin/fdfind /usr/bin/fd
+sudo ln -s /usr/bin/batcat /usr/local/bin/bat
+sudo ln -s /usr/bin/fdfind /usr/local/bin/fd
 
 curl https://getcroc.schollz.com | bash
-safe-rm -rf .fzf && git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install --all
+
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install --all
 
 wget https://github.com/zx9597446/qtunnel/releases/download/v0.0.1/qtunnel-linux-amd64
 chmod +x qtunnel-linux-amd64
@@ -41,3 +42,11 @@ sudo dpkg -i filebeat-*.deb
 sudo systemctl stop filebeat
 sudo systemctl enable filebeat
 rm filebeat-*.deb
+
+sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
+curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
+sudo apt update
+sudo apt install caddy
+sudo systemctl disable caddy
+sudo systemctl status caddy
