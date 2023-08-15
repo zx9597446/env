@@ -20,7 +20,7 @@ sudo ln -s /usr/bin/fdfind /usr/local/bin/fd
 
 curl https://getcroc.schollz.com | bash
 
-safe-rm -rf ~/.fzf && git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install --all
+safe-rm -rf ~/.fzf && git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install --all && source ~/.bashrc
 
 wget https://github.com/zx9597446/qtunnel/releases/download/v0.0.1/qtunnel-linux-amd64
 chmod +x qtunnel-linux-amd64
