@@ -1,5 +1,5 @@
 sudo apt update
-sudo apt install --yes git vim curl telnet screen moreutils safe-rm unattended-upgrades sshguard
+sudo apt install --yes unattended-upgrades sshguard
 
 cat <<EOF > "/etc/apt/apt.conf.d/20auto-upgrades"
 APT::Periodic::Update-Package-Lists "1";
@@ -10,26 +10,8 @@ sudo systemctl enable unattended-upgrades
 sudo systemctl restart unattended-upgrades
 sudo systemctl status unattended-upgrades
 
-sudo apt install --yes nodejs npm && npm install pm2 -g && pm2 startup
+sudo apt install --yes nodejs pnpm && pnpm install pm2 -g && pm2 startup
 sudo apt install --yes docker docker-compose
-
-sudo apt install --yes jq ripgrep silversearcher-ag bat fd-find exa duf
-
-sudo ln -s /usr/bin/batcat /usr/local/bin/bat
-sudo ln -s /usr/bin/fdfind /usr/local/bin/fd
-
-curl https://getcroc.schollz.com | bash
-
-safe-rm -rf ~/.fzf && git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install --all && source ~/.bashrc
-
-wget https://github.com/zx9597446/qtunnel/releases/download/v0.0.1/qtunnel-linux-amd64
-chmod +x qtunnel-linux-amd64
-sudo mv qtunnel-linux-amd64 /usr/local/bin/qtunnel
-
-wget https://github.com/joehillen/sysz/releases/latest/download/sysz && chmod +x sysz
-sudo mv sysz /usr/local/bin/
-
-curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | DIR=/usr/local/bin sudo bash
 
 wget https://github.com/binwiederhier/ntfy/releases/download/v2.6.2/ntfy_2.6.2_linux_amd64.deb
 sudo dpkg -i ntfy_*.deb
