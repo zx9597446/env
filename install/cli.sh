@@ -14,8 +14,6 @@ sudo mv qtunnel-linux-amd64 /usr/local/bin/qtunnel
 wget https://github.com/joehillen/sysz/releases/latest/download/sysz && chmod +x sysz
 sudo mv sysz /usr/local/bin/
 
-sudo sh -c "curl https://raw.githubusercontent.com/kadwanev/retry/master/retry -o /usr/local/bin/retry && chmod +x /usr/local/bin/retry"
-
 curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | DIR=/usr/local/bin sudo bash
 
 safe-rm -rf ~/.fzf && git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install --all
