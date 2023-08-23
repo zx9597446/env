@@ -1,12 +1,8 @@
 sudo apt update
+sudo apt install --yes git vim curl wget telnet screen moreutils coreutils safe-rm 
+sudo apt install --yes jq ripgrep silversearcher-ag retry
 sudo apt install --yes nodejs npm && npm install pm2 -g && pm2 startup
 sudo apt install --yes docker docker-compose
-
-wget https://github.com/binwiederhier/ntfy/releases/download/v2.6.2/ntfy_2.6.2_linux_amd64.deb
-sudo dpkg -i ntfy_*.deb
-sudo systemctl stop ntfy
-sudo systemctl disable ntfy
-rm ntfy_*.deb
 
 curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.9.0-amd64.deb
 sudo dpkg -i filebeat-*.deb
@@ -21,4 +17,10 @@ sudo apt update
 sudo apt install caddy
 sudo systemctl stop caddy
 sudo systemctl disable caddy
-sudo systemctl status caddy
+
+retry -- wget --timtout=30 https://github.com/binwiederhier/ntfy/releases/download/v2.6.2/ntfy_2.6.2_linux_amd64.deb
+sudo dpkg -i ntfy_*.deb
+sudo systemctl stop ntfy
+sudo systemctl disable ntfy
+rm ntfy_*.deb
+
