@@ -1,5 +1,5 @@
 sudo apt update
-sudo apt install --yes nodejs pnpm && pnpm install pm2 -g && pm2 startup
+sudo apt install --yes nodejs npm && npm install pm2 -g && pm2 startup
 sudo apt install --yes docker docker-compose
 
 wget https://github.com/binwiederhier/ntfy/releases/download/v2.6.2/ntfy_2.6.2_linux_amd64.deb
