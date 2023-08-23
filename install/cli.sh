@@ -1,6 +1,5 @@
 sudo apt update
 sudo apt install --yes git vim curl wget telnet screen moreutils coreutils safe-rm 
-
 sudo apt install --yes jq ripgrep silversearcher-ag bat fd-find exa duf retry
 
 sudo ln -s /usr/bin/batcat /usr/local/bin/bat
