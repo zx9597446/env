@@ -2,7 +2,7 @@ sudo apt update
 sudo apt install --yes git git-extras vim curl wget telnet screen moreutils coreutils safe-rm 
 sudo apt install --yes jq ripgrep silversearcher-ag retry
 
-safe-rm -rf ~/.fzf && retry -- git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf 
+safe-rm -rf ~/.fzf && retry -- git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 retry -- bash ~/.fzf/install --all
 
 retry -- curl https://getcroc.schollz.com | retry bash
