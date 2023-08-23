@@ -1,16 +1,4 @@
 sudo apt update
-sudo apt install --yes unattended-upgrades sshguard
-
-cat <<EOF > "/etc/apt/apt.conf.d/20auto-upgrades"
-APT::Periodic::Update-Package-Lists "1";
-APT::Periodic::Unattended-Upgrade "1";
-APT::Periodic::AutocleanInterval "7";
-EOF
-sudo systemctl enable unattended-upgrades
-sudo systemctl restart unattended-upgrades
-sudo systemctl status unattended-upgrades
-sudo systemctl status sshguard
-
 sudo apt install --yes nodejs pnpm && pnpm install pm2 -g && pm2 startup
 sudo apt install --yes docker docker-compose
 
