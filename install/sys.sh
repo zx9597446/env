@@ -1,6 +1,6 @@
 sudo apt update
 sudo apt install --yes git git-extras vim curl wget telnet screen moreutils coreutils safe-rm 
-sudo apt install --yes jq ripgrep silversearcher-ag retry
+sudo apt install --yes jq ripgrep silversearcher-ag retry proxychains4
 sudo apt install --yes nodejs npm && npm install pm2 -g && pm2 startup
 sudo apt install --yes docker docker-compose
 
