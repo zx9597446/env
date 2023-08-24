@@ -9,4 +9,6 @@ wget https://github.com/zx9597446/qtunnel/releases/download/v0.0.1/qtunnel-linux
 
 wget https://github.com/joehillen/sysz/releases/latest/download/sysz && chmod +x sysz && sudo mv sysz /usr/local/bin/
 
-curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | DIR=/usr/local/bin sudo bash
+curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
+echo 'export PATH=$PATH:$HOME/.local/bin' | tee -a $HOME/.bashrc
+echo "alias lzd='lazydocker'" | tee -a $HOME/.bashrc
