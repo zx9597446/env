@@ -1,5 +1,5 @@
-sudo apt update
-sudo apt install --yes unattended-upgrades sshguard
+sudo apt-get update
+sudo apt-get install --yes unattended-upgrades sshguard
 
 cat <<EOF > "/etc/apt/apt.conf.d/20auto-upgrades"
 APT::Periodic::Update-Package-Lists "1";

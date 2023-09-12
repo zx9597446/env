@@ -1,14 +1,14 @@
-sudo apt update
-sudo apt install --yes git git-extras vim curl wget telnet screen moreutils coreutils safe-rm 
-sudo apt install --yes jq ripgrep silversearcher-ag retry sysdig
-sudo apt install --yes nodejs npm && npm install pm2 -g && pm2 startup
-sudo apt install --yes docker docker-compose
+sudo apt-get update
+sudo apt-get install --yes git git-extras vim curl wget telnet screen moreutils coreutils safe-rm 
+sudo apt-get install --yes jq ripgrep silversearcher-ag retry sysdig
+sudo apt-get install --yes nodejs npm && npm install pm2 -g && pm2 startup
+sudo apt-get install --yes docker docker-compose
 
-sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
+sudo apt-get install -y debian-keyring debian-archive-keyring apt-transport-https
 curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
-curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
-sudo apt update
-sudo apt install caddy
+curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt-get/sources.list.d/caddy-stable.list
+sudo apt-get update
+sudo apt-get install caddy
 sudo systemctl stop caddy
 sudo systemctl disable caddy
 
