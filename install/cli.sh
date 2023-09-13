@@ -15,7 +15,6 @@ sudo eget jesseduffield/lazydocker --to /usr/local/bin
 sudo eget sharkdp/fd --asset ^musl --to /usr/local/bin
 sudo eget sharkdp/bat --asset ^musl --to /usr/local/bin
 sudo eget lsd-rs/lsd --asset ^musl --to /usr/local/bin
-sudo eget Canop/broot --asset ^musl --to /usr/local/bin
 sudo eget muesli/duf --asset tar.gz --to /usr/local/bin
 sudo eget bootandy/dust --asset ^musl --to /usr/local/bin
 sudo eget chmln/sd --asset ^musl --to /usr/local/bin
