@@ -45,6 +45,7 @@ echo "alias sc-status='sudo systemctl status \$*'" | tee -a $HOME/.bashrc
 echo "alias sc-start='sudo systemctl start \$*'" | tee -a $HOME/.bashrc
 echo "alias sc-restart='sudo systemctl restart \$*'" | tee -a $HOME/.bashrc
 echo "alias sc-stop='sudo systemctl stop \$*'" | tee -a $HOME/.bashrc
+echo "alias sc-disable='sudo systemctl enable \$*'" | tee -a $HOME/.bashrc
 echo "alias sc-disable='sudo systemctl disable \$*'" | tee -a $HOME/.bashrc
 echo "alias sc-load='sudo systemctl load \$*'" | tee -a $HOME/.bashrc
 echo "alias sc-reload='sudo systemctl reload \$*'" | tee -a $HOME/.bashrc
