@@ -24,8 +24,6 @@ sudo eget ogham/dog --asset ^musl --asset ^minisig --to /usr/local/bin
 sudo eget ducaale/xh --asset ^musl --to /usr/local/bin
 sudo eget dalance/procs --asset ^musl --to /usr/local/bin
 
-curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
-
 sudo apt-get install -y screen
 tee -a ~/.screenrc << END
 hardstatus string "%h"
@@ -35,6 +33,7 @@ END
 echo ''
 echo 'export PATH=$PATH:$HOME/.local/bin' | tee -a $HOME/.bashrc
 
+echo ''
 echo "alias cht='curl cheat.sh/\$*'" | tee -a $HOME/.bashrc
 echo "alias ccsd='croc send --code wasduijk \$*'" | tee -a $HOME/.bashrc
 echo "alias ccrv='croc --yes --overwrite wasduijk'" | tee -a $HOME/.bashrc
