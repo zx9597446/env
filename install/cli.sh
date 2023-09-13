@@ -19,7 +19,6 @@ sudo eget muesli/duf --asset tar.gz --to /usr/local/bin
 sudo eget bootandy/dust --asset ^musl --to /usr/local/bin
 sudo eget chmln/sd --asset ^musl --to /usr/local/bin
 sudo eget ogham/exa --asset ^musl --to /usr/local/bin
-sudo eget ogham/dog --asset ^musl --asset ^minisig --to /usr/local/bin
 sudo eget ducaale/xh --asset ^musl --to /usr/local/bin
 sudo eget dalance/procs --asset ^musl --to /usr/local/bin
 
