@@ -13,7 +13,18 @@ sudo eget zx9597446/kncat --to /usr/local/bin
 sudo eget joehillen/sysz --to /usr/local/bin
 sudo eget jesseduffield/lazydocker --to /usr/local/bin
 sudo eget sharkdp/fd --asset ^musl --to /usr/local/bin
+sudo eget sharkdp/bat --asset ^musl --to /usr/local/bin
+sudo eget lsd-rs/lsd --asset ^musl --to /usr/local/bin
+sudo eget Canop/broot --asset ^musl --to /usr/local/bin
+sudo eget muesli/duf --asset tar.gz --to /usr/local/bin
+sudo eget bootandy/dust --asset ^musl --to /usr/local/bin
+sudo eget chmln/sd --asset ^musl --to /usr/local/bin
 sudo eget ogham/exa --asset ^musl --to /usr/local/bin
+sudo eget ogham/dog --asset ^musl --asset ^minisig --to /usr/local/bin
+sudo eget ducaale/xh --asset ^musl --to /usr/local/bin
+sudo eget dalance/procs --asset ^musl --to /usr/local/bin
+
+curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
 
 sudo apt-get install -y screen
 tee -a ~/.screenrc << END
@@ -21,6 +32,7 @@ hardstatus string "%h"
 caption always "%{= kw} %-w%{= wk}%n*%t%{-}%+w%{= kw} %=%d %M %0c %{g}%H%{-}"
 END
 
+echo 'export PATH=$PATH:$HOME/.local/bin' | tee -a $HOME/.bashrc
 echo "alias cht='curl cheat.sh/$*'" | tee -a $HOME/.bashrc
 echo "alias ccsd='croc send --code wasduijk $*'" | tee -a $HOME/.bashrc
 echo "alias ccrv='croc --yes --overwrite wasduijk'" | tee -a $HOME/.bashrc
