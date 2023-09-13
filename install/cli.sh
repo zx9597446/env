@@ -1,4 +1,4 @@
-sudo apt-get install --yes git vim curl wget telnet screen moreutils coreutils safe-rm retry
+sudo apt-get install --yes git vim curl wget telnet screen moreutils coreutils safe-rm retry ngrep
 sudo apt-get install --yes jq ripgrep silversearcher-ag htop glances sysdig
 
 curl https://getcroc.schollz.com | bash
