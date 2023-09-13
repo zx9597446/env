@@ -2,6 +2,7 @@
 echo ''
 echo 'export PATH=$PATH:$HOME/.local/bin' | tee -a $HOME/.bashrc
 
+echo ''
 echo "alias cht='curl cheat.sh/\$*'" | tee -a $HOME/.bashrc
 echo "alias ccsd='croc send --code wasduijk \$*'" | tee -a $HOME/.bashrc
 echo "alias ccrv='croc --yes --overwrite wasduijk'" | tee -a $HOME/.bashrc
