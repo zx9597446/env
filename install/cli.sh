@@ -9,6 +9,7 @@ curl https://zyedidia.github.io/eget.sh | bash
 sudo mv eget /usr/local/bin
 
 sudo eget zyedidia/eget --to /usr/local/bin
+sudo eget binwiederhier/ntfy -a tar.gz --file ntfy --to /usr/local/bin
 sudo eget zx9597446/kncat --to /usr/local/bin
 sudo eget joehillen/sysz --to /usr/local/bin
 sudo eget jesseduffield/lazydocker --to /usr/local/bin
