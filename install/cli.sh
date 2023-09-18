@@ -1,9 +1,11 @@
 sudo apt-get install --yes git vim curl wget telnet screen moreutils coreutils safe-rm retry ngrep tree
 sudo apt-get install --yes jq ripgrep silversearcher-ag htop glances sysdig
 
+npm install pm2@latest -g && pm2 completion install
+
 curl https://getcroc.schollz.com | bash
 
-safe-rm -rf ~/.fzf && git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install --all
+rm -rf ~/.fzf && git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install --all
 
 curl https://zyedidia.github.io/eget.sh | bash
 sudo mv eget /usr/local/bin
