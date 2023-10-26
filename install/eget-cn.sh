@@ -98,3 +98,5 @@ Eget has been downloaded to the current directory.
 You can run it with:
 ./eget
 EOM
+sudo mv eget /usr/local/bin
+
