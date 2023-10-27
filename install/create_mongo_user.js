@@ -12,5 +12,6 @@ db.createUser(
   }
 )
 
+// mongosh < create_mongo_user.js
 // security:
 //     authorization: "enabled"
