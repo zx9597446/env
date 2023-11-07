@@ -1,4 +1,4 @@
-sudo apt-get install --yes git vim curl wget telnet screen moreutils coreutils safe-rm retry ngrep tree
+sudo apt-get install --yes git vim curl wget telnet screen moreutils coreutils safe-rm retry ngrep tree dos2unix
 sudo apt-get install --yes jq ripgrep silversearcher-ag htop glances sysdig
 
 npm install pm2@latest -g && pm2 completion install
