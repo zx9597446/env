@@ -2,6 +2,7 @@ sudo apt-get install --yes git vim curl wget telnet screen moreutils coreutils s
 sudo apt-get install --yes jq ripgrep silversearcher-ag htop glances sysdig
 
 npm install pm2@latest -g && pm2 completion install
+pm2 install pm2-logrotate
 
 curl https://getcroc.schollz.com | bash
 
