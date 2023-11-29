@@ -6,6 +6,7 @@ pyev=pyenv versions
 pyeg=pyenv global $*
 pipr=pip install -r requirements.txt
 pipi=pip install $*
+pipu=pip freeze | xargs pip uninstall -y
 piptorch=pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 sci=scoop install $*
 scl=scoop list
