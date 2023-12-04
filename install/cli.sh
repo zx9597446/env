@@ -1,5 +1,5 @@
 sudo apt-get install --yes git vim curl wget telnet screen moreutils coreutils safe-rm retry ngrep tree dos2unix
-sudo apt-get install --yes jq ripgrep silversearcher-ag htop glances sysdig mitmproxy
+sudo apt-get install --yes jq ripgrep silversearcher-ag htop glances sysdig graftcp
 
 npm install pm2@latest -g && pm2 completion install
 pm2 install pm2-logrotate
