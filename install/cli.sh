@@ -24,7 +24,7 @@ sudo eget bootandy/dust --asset ^musl --to /usr/local/bin
 sudo eget chmln/sd --asset ^musl --to /usr/local/bin
 sudo eget ogham/exa --asset ^musl --to /usr/local/bin
 sudo eget dalance/procs --asset ^musl --to /usr/local/bin
-sudo eget fatedier/frp --to /usr/local/bin
+sudo eget --all fatedier/frp --to /usr/local/bin
 
 sudo apt-get install -y screen
 tee -a ~/.screenrc << END
