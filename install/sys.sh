@@ -3,6 +3,11 @@ sudo apt-get install --yes git git-extras vim curl wget telnet screen moreutils 
 sudo apt-get install --yes jq ripgrep silversearcher-ag retry sysdig
 sudo apt-get install --yes nodejs npm && npm install pm2@latest -g && pm2 startup && pm2 completion install
 sudo apt-get install --yes docker docker-compose
+sudo apt-get install --yes git vim curl wget telnet screen moreutils coreutils safe-rm retry ngrep tree dos2unix
+sudo apt-get install --yes jq ripgrep silversearcher-ag htop glances sysdig
+
+npm install pm2@latest -g && pm2 completion install
+pm2 install pm2-logrotate
 
 sudo apt-get install -y debian-keyring debian-archive-keyring apt-transport-https
 curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
