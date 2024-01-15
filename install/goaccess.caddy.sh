@@ -7,3 +7,5 @@ test.site {
 		format json
 	}
 }
+
+# goaccess /var/log/caddy/access.log --log-format=CADDY
