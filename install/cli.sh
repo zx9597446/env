@@ -22,4 +22,4 @@ sudo eget dalance/procs --asset ^musl --to /usr/local/bin
 sudo eget --all fatedier/frp --to /usr/local/bin
 sudo eget ginuerzh/gost --to /usr/local/bin
 sudo eget codeskyblue/gohttpserver --to /usr/local/bin
-
+sudo eget svenstaro/miniserve --asset ^musl --to /usr/local/bin
