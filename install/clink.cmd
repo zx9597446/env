@@ -6,3 +6,5 @@ curl -o %localappdata%\clink\more-clink-completions.lua https://github.com/sebth
 
 clink set fzf.default_bindings true
 clink set cmd.auto_answer answer_yes
+
+clink autorun install
