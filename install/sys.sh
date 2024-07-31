@@ -1,5 +1,5 @@
 sudo apt-get update
-sudo apt-get install --yes git git-extras vim curl wget telnet screen moreutils coreutils safe-rm 
+sudo apt-get install --yes unzip git git-extras vim curl wget telnet screen moreutils coreutils safe-rm
 sudo apt-get install --yes jq ripgrep silversearcher-ag retry sysdig
 sudo apt-get install --yes git vim curl wget telnet screen moreutils coreutils safe-rm retry ngrep tree dos2unix
 sudo apt-get install --yes jq ripgrep silversearcher-ag htop glances sysdig
