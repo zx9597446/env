@@ -4,8 +4,9 @@ sudo apt-get install --yes jq ripgrep silversearcher-ag retry sysdig
 sudo apt-get install --yes git vim curl wget telnet screen moreutils coreutils safe-rm retry ngrep tree dos2unix
 sudo apt-get install --yes jq ripgrep silversearcher-ag htop glances sysdig
 
-sudo apt-get install --yes nodejs npm && npm install pm2@latest -g && pm2 startup && pm2 completion install
-npm install pm2@latest -g && pm2 completion install
+sudo apt-get install --yes nodejs npm
+sudo npm install pm2@latest -g 
+pm2 completion install
 pm2 install pm2-logrotate
 
 sudo apt-get install --yes docker docker-compose
